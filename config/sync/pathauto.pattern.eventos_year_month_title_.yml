@@ -1,0 +1,22 @@
+uuid: 3eb034de-c773-42c9-a67a-a7dd4cbed8da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: eventos_year_month_title_
+label: 'Eventos: /<year>/<month>/<title>'
+type: 'canonical_entities:node'
+pattern: 'events/[node:created:html_year]/[node:created:html_month]/[node:title]'
+selection_criteria:
+  7738ff59-8e96-4e16-82da-8fff23c1c7ac:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7738ff59-8e96-4e16-82da-8fff23c1c7ac
+selection_logic: and
+weight: -5
+relationships: {  }
